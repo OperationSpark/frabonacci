@@ -30,11 +30,11 @@ Create a new Cloud9 workspace and clone the project from github.com:
 
 4. Now, when the workspace is loaded, select the command-line in the bottom window pane, and enter the command `bower install`, then press `Enter`, like this:
 
-    <img src="https://raw.githubusercontent.com/OperationSpark/circularity/master/img/bower-install.png">
+    <img src="https://raw.githubusercontent.com/OperationSpark/circularity/master/img/whatever-project-bower-install.png">
 
     You'll see some test flying by on the command-line as some required files are installed... and when complete, you'll see something like this:
     
-    <img src="https://raw.githubusercontent.com/OperationSpark/circularity/master/img/bower-installed.png">
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/whatever-project-bower-installed.png">
 
 Nice, you're in business...
 
