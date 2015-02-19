@@ -3,7 +3,7 @@ Frabonacci
 
 A motion poem making use of the golden ratio to generate an animate artistic patterns, inspired by the work of the great Gabriel Mulzer.
 
-Also at: http://bit.ly/
+Also at: http://bit.ly/frabonacci
 
 **Table of Contents**
 
