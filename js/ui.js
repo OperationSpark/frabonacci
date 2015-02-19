@@ -26,6 +26,7 @@
         return template;
     }
     
+    // TODO : Update - see if you can standarize this... // 
     function makeControls(values, settings, view, reset) {
         _.where(settings, {'allowInput': true}).forEach(function (setting) {
             var id, formControls;
