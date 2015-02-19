@@ -14,7 +14,7 @@ Create a new Cloud9 workspace and clone the project from github.com:
 
 1. From your Cloud9 Dashboard, find in the upper left corner and click the green button, "Create New Workspace" > "Clone From URL":
 
-    <img src="https://raw.githubusercontent.com/OperationSpark/frabonacci/master/img/clone-new-workspace.png">
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/clone-new-workspace.png">
 
 2. In the "Source URL" form input, copy and paste in the following URL (see A):
     
@@ -22,15 +22,15 @@ Create a new Cloud9 workspace and clone the project from github.com:
     
     Then, in the environment selection box, select "HTML5" (see B).  Finally, click the green button "Create" (see C).
     
-    <img src="https://raw.githubusercontent.com/OperationSpark/circularity/master/img/clone-workspace.png">
+    <img src="https://raw.githubusercontent.com/OperationSpark/frabonacci/master/img/clone-workspace-html5.png">
 
 3. Wait for the workspace to finish spooling (while spooling up, you'll see a spinning gear on the newly created workspace in the sidebar), and once the workspace is completed, click the green button, "START EDITING".
 
-    <img src="https://raw.githubusercontent.com/OperationSpark/circularity/master/img/start-editing.png">
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/whatever-project-start-editing.png">
 
 4. Now, when the workspace is loaded, select the command-line in the bottom window pane, and enter the command `bower install`, then press `Enter`, like this:
 
-    <img src="https://raw.githubusercontent.com/OperationSpark/circularity/master/img/whatever-project-bower-install.png">
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/whatever-project-bower-install.png">
 
     You'll see some test flying by on the command-line as some required files are installed... and when complete, you'll see something like this:
     
