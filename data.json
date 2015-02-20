@@ -9,8 +9,8 @@
         "degrade": 1.001,
         "max": 314,
         "goldenAngle": 137.508,
-        "raduis": 40,
-        "raduisGrowthFactor": 1.005,
+        "radius": 40,
+        "radiusGrowthFactor": 1.005,
         "rotation": 0
     },
     "two" : {
@@ -21,8 +21,8 @@
         "degrade": 0.9998,
         "max": 314,
         "goldenAngle": 137.508,
-        "raduis": 20,
-        "raduisGrowthFactor": 1.013,
+        "radius": 20,
+        "radiusGrowthFactor": 1.013,
         "rotation": 0
     },
     "three" : {
@@ -33,8 +33,8 @@
         "degrade": 0.9999,
         "max": 314,
         "goldenAngle": 142.508,
-        "raduis": 20,
-        "raduisGrowthFactor": 1.013,
+        "radius": 20,
+        "radiusGrowthFactor": 1.013,
         "rotation": 0
     }
 }

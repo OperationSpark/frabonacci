@@ -33,6 +33,7 @@
                 'use strict';
                 
                 var 
+                    _ = window._,
                     load = window.opspark.load,
                     draw = window.opspark.draw,
                     ui = window.opspark.ui,
@@ -41,7 +42,12 @@
                     view = app.view;
                 
                 // TODO 1 : Declare our variables //
-                
+                var 
+                    settings,
+                    values,
+                    i,
+                    shape, 
+                    template;
                 
                 // Here, we're loading our required data //
                 load.json('data.json').then(function(data) {
@@ -52,22 +58,49 @@
                 
                 // TODO 2 : Implement the initialize() function //
                 function initialize() {
-                    
+                    values = _.clone(settings[settings.activeDataSet]);
+                    i = values.max;
+                    template = ui.makeTemplate();
                 }
                 
                 // TODO 4 : Implement the update function //
                 function update() {
-                    
+                    if (i) {
+                        drawShape();
+                        applyScale(shape);
+                        i--;
+                    } else {
+                        view.removeChildAt(0);
+                        if (view.numChildren === 0) {
+                            initialize();
+                        }
+                    }
                 }
                 
                 // TODO 3 : Implement the drawShape function //
                 function drawShape() {
+                    values.goldenAngle *= values.degrade;
                     
+                    values.rotation += values.goldenAngle;
+                    values.rotation -= Math.floor(values.rotation / 360) * 360;
+                    
+                    values.radius *= values.radiusGrowthFactor;
+                
+                    shape = template.clone();
+                    shape.x = Math.cos(values.rotation * Math.PI / 180) * values.radius + (canvas.width / 2);
+                    shape.y = Math.sin(values.rotation * Math.PI / 180) * values.radius + (canvas.height / 2);
+                    shape.rotation = values.rotation;
+                
+                    view.addChildAt(shape, 0);
                 }
                 
                 // TODO 5 : Implement the applyScale //
                 function applyScale(shape) {
-                    
+                    values.scaleX += values.growthX;
+                    values.scaleY += values.growthY;
+                
+                    shape.scaleX = values.scaleX;
+                    shape.scaleY = values.scaleY;
                 }
                 
             })();
